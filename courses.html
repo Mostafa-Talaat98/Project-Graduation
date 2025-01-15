@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <title>Quiz Maker</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Cloud 83 - hosting template " />
+    <meta name="keywords" content="cloud, hosting, creative, html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Header section -->
+    <header class="header-section position-fixed">
+      
+      <div class="nav-switch">
+        <i class="fa fa-bars"></i>
+      </div>
+      <div class="nav-warp">
+        <div class="user-panel site-btn">
+          <a href="login/examples/login-page.html">Login</a> /
+          <a href="login/examples/register-page.html">Register</a>
+        </div>
+        <ul class="main-menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About us</a></li>
+          <li><a href="./service.html">Services</a></li>
+          <li><a href="./blog.html">News</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- Header section end -->
+
+    <!-- Banner section -->
+    <section
+      class="banner-section set-bg"
+      data-setbg="img/banner-bg.jpg"
+      style="height: auto;"
+    >
+      <div class="">
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade " id="exampleModalCenter" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title " id="exampleModalLongTitle" style="color: black;">Create New Course</h5>
+            </div>
+            <div class="modal-body" style="color: black;">
+       
+                <div class="card" style="border: none;">
+                    <img class="card-img-top" src="img/courses/default-image-1200_800.png" alt="Card image cap">
+                    <div class="card-body" style="padding: 0 23px;
+                    border: none;">
+                      <div class="card-title">
+                          <label for="courseNameInput" >Course name</label>
+                          <input type="text" class="md-input form-control" name="courseName" id="courseNameInput"/></div>
+                        <div class="card-title">
+                          <label for="coursecodeInput" >Course code</label>
+                            <input type="number" class="md-input form-control" name="coursecode" id="coursecodeInput"/></div>
+                      
+                        <div class="card-text">
+                        <label for="coursefieldInput" >Course field</label>
+                         <input type="text" class="md-input form-control" name="coursefield" id="coursecodefield"/>
+                        
+                        </div>
+                    </div>
+                  </div>
+
+            </div>
+            <br><br><br><br>
+            <div class="modal-footer">
+                
+
+                <button data-dismiss="modal" type="button" id="createNewCourseBtn" class="btn btn-success"
+                onclick="addNewCourse()" >Create </button>
+
+
+                <button  type="button" class="btn btn-secondary"
+                    data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <!-- Create New Course Panel-->
+
+    <section>
+        <div class="row col-12 mx-auto my-3 justify-content-end px-5" style="position: fixed;">
+          <button  data-placement="top" title="create New Course" data-toggle="modal"
+          data-target="#exampleModalCenter" id="btnCreateCourse"
+          type="button"
+          class="btn btn-success"
+          data-dismiss="modal"
+        >
+        <i class="fa fa-plus"></i>
+        </div>
+      </section>
+
+
+
+        <div>
+          <div class="card-deck ">
+            <div class="container">
+              <div class="row">
+                <div class=" col-lg-4 course">
+                  <div class="card">
+                    <img
+                      class="card-img-top"
+                      src="img/courses/default-image-1200_800.png"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title" style="text-align: center ;font-size: 40px;">course title</h5>
+                         <p class="card-text" style=" font-size: 30px; color :dodgerblue; text-align: center; ">
+                          Math
+                      </p>
+                    </div>
+                   
+                  </div>
+                </div>
+                <div class=" col-lg-4 course">
+                  <div class="card ">
+                    <img
+                      class="card-img-top"
+                      src="img/courses/default-image-1200_800.png"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title" style="text-align: center ;font-size: 40px;">course title</h5>
+                         <p class="card-text" style=" font-size: 30px; color :dodgerblue; text-align: center; ">
+                          Programming 1 
+                      </p>
+                    </div>
+                   
+                  </div>
+                </div>
+                <div class=" col-lg-4 course">
+                  <div class="card ">
+                    <img
+                      class="card-img-top"
+                      src="img/courses/default-image-1200_800.png"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title" style="text-align: center ;font-size: 40px;">course title</h5>
+                         <p class="card-text" style=" font-size: 30px; color :dodgerblue; text-align: center; ">
+                           software Enginnering 
+                      </p>
+                    </div>
+                   
+                  </div>
+                </div>
+                <div class=" col-lg-4 course">
+                  <div class="card ">
+                    <img
+                      class="card-img-top"
+                      src="img/courses/default-image-1200_800.png"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title" style="text-align: center ;font-size: 40px;">course title</h5>
+                        <p class="card-text" style=" font-size: 30px; color :dodgerblue; text-align: center; ">
+                           physics 
+                      </p>
+                    </div>
+                  
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div
+            class="modal fade "
+            id="exampleModalCenter"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5
+                    class="modal-title "
+                    id="exampleModalLongTitle"
+                    style="color: black;"
+                  >
+                    Why do you want to delete the question ?
+                  </h5>
+                </div>
+                <div class="modal-body" style="color: black;">
+                  <div class="radio">
+                    <label
+                      ><input type="radio" name="optradio" />Question too
+                      long</label
+                    >
+                  </div>
+                  <div class="radio">
+                    <label
+                      ><input type="radio" name="optradio" />Bad Question</label
+                    >
+                  </div>
+                  <div class="radio">
+                    <label
+                      ><input type="radio" name="optradio" />do not like</label
+                    >
+                  </div>
+                  <div class="radio">
+                    <label><input type="radio" name="optradio" />Other</label>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button id="confirm" type="button" class="btn btn-primary ">
+                    Confirm delete
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Banner section end -->
+
+    
+
+    <!--====== Javascripts & Jquery ======-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/circle-progress.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/mainjs.js"></script>
+    <script src="js/popper.js"></script>
+
+    <script>
+
+
+    let newCourseName = $('#courseNameInput').val();
+    let newCourseDesc = $('#courseDescInput').val();
+
+  function  functionCourseCode(){ return `<div class=" col-lg-4 course">
+    <div class="card">
+      <img class="card-img-top" src="img/courses/default-image-1200_800.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">`+ newCourseName + `</h5>
+        <p class="card-text">
+        ` + newCourseDesc + `
+        </p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+                              <button type="button " class="btn btn-light float-right"><a href="./examMaker.html"> <i class="fa fa-cog"></i> </a> </button>
+
+      </div>
+    </div>
+  </div>`;
+}
+
+    function addNewCourse() {
+
+        newCourseName = $('#courseNameInput').val();
+          newCourseDesc = $('#courseDescInput').val();
+        $('.card-deck > .container > .row').append(functionCourseCode());
+
+    };
+
+   
+    </script>
+  </body>
+</html>
